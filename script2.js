@@ -35,9 +35,9 @@ class UserClass {
 
 
 //Declaración de instancia de la clase User
-const dianaClase = new UserClass(
-    "Diana",
-    "Di Stefano",
+const Clase1 = new UserClass(
+    "Magali",
+    "De Paul",
     [
       { titulo: "La naranja mecánica", autoria: "Anthony Burgess" },
       { titulo: "El tao de la física", autoria: "Fritjof Capra" }
@@ -57,18 +57,18 @@ const informacionWeb=document.querySelector(".informacion");
 //Con Clases de javascript
 console.log('\n');
 console.warn("Ejercicio realizado con Clases de Javascript")
-console.log(`El nombre completo del user es ${dianaClase.getFullName()}`);
-dianaClase.addMascota("crazy");
-console.log(`La cantidad actualizada de mascotas de la persona es ${dianaClase.getMascotas()}`);
+console.log(`El nombre completo del user es ${Clase1.getFullName()}`);
+Clase1.addMascota("crazy");
+console.log(`La cantidad actualizada de mascotas de la persona es ${Clase1.getMascotas()}`);
 
-dianaClase.addBook("El segundo sexo","Simone de Beauvoir");
+Clase1.addBook("El segundo sexo","Simone de Beauvoir");
 console.log("Lista completa de sus libros favoritos:")
-console.log(dianaClase.getBooks())
+console.log(Clase1.getBooks())
 
 
 console.log('\n');
 console.log("Datos completos de la persona agregada: ")
-console.log(dianaClase)
+console.log(Clase1)
 console.log("Datos completos de una persona sin datos: ")
 console.log(empty)
 
@@ -81,9 +81,9 @@ function mostrarDatosClases() {
     info.innerHTML= `
     <h1>Ejercicio realizado con Clases</h1>
     <ul>
-        <li>El nombre completo del user es ${dianaClase.getFullName()}</li>
-        <li>La cantidad actualizada de mascotas de la persona es ${dianaClase.getMascotas()}</li>
-        <li>Lista completa de sus libros favoritos: ${dianaClase.getBooks()}</li>
+        <li>El nombre completo del user es ${Clase1.getFullName()}</li>
+        <li>La cantidad actualizada de mascotas de la persona es ${Clase1.getMascotas()}</li>
+        <li>Lista completa de sus libros favoritos: ${Clase1.getBooks()}</li>
     </ul>`;
     informacionWeb.appendChild(info);
 }
